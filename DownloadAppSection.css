@@ -1,0 +1,65 @@
+.it-easier-in-apps {
+    padding: 0 150px;
+    text-align: center;
+}
+
+.it-easier-in-apps h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.app-download-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-download {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 20%;
+    position: relative;
+}
+
+.app-download img {
+    width: 30%;
+    height: auto;
+    margin-right: 30px;
+}
+
+.app-download-text {
+    padding-left: 20px;
+    position: relative;
+}
+
+.app-download-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.app-download-text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #000;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    animation: bounce-left 1s infinite;
+}
+
+@keyframes bounce-left {
+    0%, 100% {
+        transform: translateY(-50%) translateX(-10px);
+    }
+    50% {
+        transform: translateY(-50%) translateX(10px);
+    }
+}

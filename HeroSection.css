@@ -1,0 +1,106 @@
+/* HeroSection.css */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px; /* Narrower padding for a tighter layout */
+    background-color: #ffffff; /* White background color */
+    min-height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrollbars due to animations */
+}
+
+.hero-left {
+    flex: 1;
+    max-width: 50%;
+    opacity: 1; /* Ensure it starts visible */
+    transition: opacity 1s ease-out;
+}
+
+.hero-left h1,
+.hero-left p,
+.hero-left input,
+.hero-left button {
+    opacity: 0;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.hero-left h1 {
+    font-size: 3rem;
+    color: #000000; /* Black color for text */
+    margin-bottom: 20px;
+    animation-delay: 0.5s;
+}
+
+.hero-left p {
+    font-size: 1.1rem;
+    color: #333333; /* Dark grey color for text */
+    margin-bottom: 10px;
+    font-weight: 400; /* Normal font weight */
+    animation-delay: 1s;
+}
+
+.hero-left input {
+    display: block;
+    width: 100%; /* Full width input */
+    padding: 14px; /* Increased padding for a more substantial feel */
+    margin-bottom: 20px; /* Increased margin for spacing */
+    font-size: 1rem;
+    border-radius: 4px; /* Smaller border radius */
+    border: 1px solid #ccc; /* Light grey border */
+    animation-delay: 1.5s;
+}
+
+.hero-left button {
+    padding: 14px 28px; /* Increased padding */
+    font-size: 1rem;
+    background-color: #000000; /* Black background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Smaller border radius */
+    font-weight: 600;
+    margin-top: 20px; /* Reduced margin */
+    animation-delay: 2s;
+}
+
+.hero-right {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    width: 100%;
+    max-width: 600px; /* Increased max-width for larger image */
+    border-radius: 0; /* No border radius for a sharp look */
+    margin-right: 0; /* No negative margin */
+}
+
+/* Keyframe animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Fade out effect on scroll */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Fade out effect for hero-left after scrolling 80% */
+.fade-out {
+    animation: fadeOut 0.8s ease-out forwards;
+}

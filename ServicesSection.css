@@ -1,0 +1,71 @@
+/* ThirdPart.css */
+.third-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    background-color: #ffffff; /* White background color */
+    height: 95vh; /* Adjust height as needed */
+}
+
+.third-part-left {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-part-left img {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width for the image */
+    border-radius: 0; /* No border radius for a sharp look */
+}
+
+.third-part-right {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 80px; /* Left padding */
+}
+
+.third-part-right h1 {
+    font-size: 3rem; /* Larger font size */
+    color: #000000; /* Black color for text */
+    margin-bottom: 20px; /* Margin bottom */
+    font-weight: 600; /* Bold font weight */
+}
+
+.third-part-right p {
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #555555; /* Dark grey color for text */
+    margin-bottom: 20px; /* Margin bottom */
+    font-weight: 400; /* Normal font weight */
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-container button {
+    padding: 14px 28px; /* Increased padding */
+    font-size: 1rem; /* Font size */
+    background-color: #000000; /* Black background color */
+    color: #ffffff; /* White text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    margin-right: 10px; /* Margin right */
+    border-radius: 4px; /* Smaller border radius */
+    font-weight: 600; /* Bold font weight */
+}
+
+.button-container a {
+    font-size: 1rem; /* Font size */
+    color: #000000; /* Black color */
+    text-decoration: none; /* No text decoration */
+    font-weight: 600; /* Bold font weight */
+}
+
+.button-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

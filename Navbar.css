@@ -1,0 +1,103 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px; /* Uber has a more narrow padding */
+  background-color: #ffffff; /* Uber's navbar has a white background */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Adjusted for a more subtle shadow */
+  height: 64px; /* Uber's navbar is shorter */
+  margin-top: 0; /* Remove any margin */
+}
+
+.logo .logo-big {
+  font-size: 30px; /* Adjust the size for the Uber logo style */
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px; /* Uber's logo is smaller */
+  margin-right: 16px;
+  color: #000000; /* Uber's logo color */
+  font-weight: bold; /* Uber's logo is bold */
+  line-height: 40px; /* Adjust the line height to vertically center the text */
+  font-size: 20px; /* Adjusted font size */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px; /* Adjust the gap between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000000; /* Uber's link color */
+  font-weight: normal; /* Uber's link text is not bold */
+  transition: color 0.3s;
+  font-size: 16px; /* Adjusted font size */
+}
+
+.nav-links li a:hover {
+  color: #007aff; /* Uber's link hover color */
+}
+
+.signup-btn {
+  background-color: #000000; /* Uber's button background color */
+  color: #ffffff; /* Button text color */
+  padding: 10px 20px;
+  border-radius: 4px; /* Adjust border-radius for a square button */
+  font-weight: normal; /* Uber's button text is not bold */
+  text-decoration: none;
+}
+
+.signup-btn:hover {
+  background-color: #333333; /* Adjusted hover effect */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff; /* Uber's dropdown background color */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #000000; /* Dropdown link color */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Dropdown link hover background */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}

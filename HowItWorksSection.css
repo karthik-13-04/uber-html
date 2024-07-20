@@ -1,0 +1,85 @@
+/* HowItWorksSection.css */
+.how-it-works-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    background-color: #f0f0f0; /* Light grey background */
+    height: 95vh; /* Full viewport height */
+}
+
+.how-it-works-left {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 40px; /* Increased right padding */
+}
+
+.how-it-works-left h1 {
+    font-size: 2.8rem; /* Larger font size for heading */
+    color: #000000; /* Black color */
+    margin-bottom: 20px;
+    font-weight: 700; /* Bold font weight */
+}
+
+.how-it-works-left p {
+    font-size: 1.2rem; /* Font size */
+    color: #555555; /* Dark grey color */
+    margin-bottom: 20px;
+    line-height: 1.5; /* Increased line height */
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Added gap between buttons and links */
+}
+
+.button-container button {
+    padding: 12px 24px; /* Increased padding */
+    font-size: 1rem; /* Font size */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Slightly rounded corners */
+    font-weight: 600; /* Bold font weight */
+}
+
+.button-container a {
+    font-size: 1rem; /* Font size */
+    color: #000000; /* Black color */
+    text-decoration: none;
+    font-weight: 600; /* Bold font weight */
+}
+
+.button-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.how-it-works-right {
+    flex: 1;
+    max-width: 50%;
+    margin-left: 40px; /* Adjusted left margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-it-works-right img {
+    width: 100%; /* Full width */
+    max-width: 500px; /* Maximum width for the image */
+    height: auto; /* Auto height to maintain aspect ratio */
+    border-radius: 15px; /* Slightly rounded corners */
+}
+
+/* Keyframe animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

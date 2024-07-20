@@ -1,0 +1,65 @@
+/* RentOutYourCarSection.css */
+.rent-out-your-car-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    background-color: #f0f0f0; /* Light grey background */
+    height: 85vh; /* Height of the section */
+}
+
+.rent-out-your-car-left {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 40px; /* Adjusted right padding for spacing */
+}
+
+.rent-out-your-car-left img {
+    width: 100%;
+    border-radius: 20px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 40px; /* Reduced margin for better alignment */
+}
+
+.rent-out-your-car-right {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 40px; /* Adjusted left padding for spacing */
+}
+
+.rent-out-your-car-right h1 {
+    font-size: 2.8rem; /* Larger font size for heading */
+    color: #000000; /* Black color */
+    margin-bottom: 20px;
+    font-weight: 700; /* Bold font weight */
+}
+
+.rent-out-your-car-right p {
+    font-size: 1.2rem; /* Font size */
+    color: #555555; /* Dark grey color */
+    margin-bottom: 20px;
+    line-height: 1.5; /* Increased line height for readability */
+}
+
+.rent-out-your-car-right button {
+    padding: 12px 24px; /* Increased padding */
+    font-size: 1rem; /* Font size */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; /* Slightly rounded corners */
+    font-weight: 600; /* Bold font weight */
+}
+
+/* Keyframe animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,79 @@
+/* Reset CSS */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+  }
+  
+  /* Loading screen */
+  .loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent 50%;
+    animation: moveFromLeft 2s forwards, zoomIn 1.5s 1.0s ease-out forwards;
+  }
+  
+  @keyframes moveFromLeft {
+    0% {
+      transform: translateX(-500%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    /* 100% {
+      transform: translateX(50%);
+    } */
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8); /* Start smaller */
+    }
+    100% {
+      transform: scale(9.8); /* Zoom to cover full screen */
+    }
+  }
+  
+  /* Main content */
+  .main-content {
+    opacity: 0;
+    animation: fadeIn 1s 2.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 4;
+    }
+  }
+  
+  /* Scroll to top button */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fffcfc;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scroll-to-top.show {
+    opacity: 0.1;
+  }
+  
